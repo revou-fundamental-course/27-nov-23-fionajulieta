@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head class="head">
+		<meta charset="UTF-8">
+    	<meta name="description" content="Calculator for triangle area and perimeter">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>triangle calculator</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+
+		<header class="page-header">
+			<div class="heading"><br>
+				<h1>TRIANGLE CALCULATOR</h1>
+				<div class="heading_subtitle">welcome to my triangle calculator website</div>
+				<div class="heading_subtitle"><em>you can use this website to calculate the <u>area</u> and <u>perimeter</u> of a triangle</em></div>
+			</div>
+		</header>
+		<hr>
+		<button id="displayAreaButton" class="switchButton">area calculator</button>
+		<button id="displayPerimeterButton" class="switchButton">perimeter calculator</button>
+	
+		<!-- any class started/contained with 'first' is used to create code for area calculation -->
+		<div class="firstcontent">
+			<h2><u>area of triangle</u></h2><br>
+			<div class="firstcontainer">
+				<div class="firstleftcontent">
+					<img width="200" src="triangle.png" alt="triangle">
+					<p>the area of triangle formula : <br><sup>1</sup>/<sub>2</sub> x c x h</p>
+				</div>
+				<div class="firstrightcontent">
+					<h3>calculate the area of triangle</h3>
+					<form onsubmit="calculateArea(); return false;" onreset="resetForm()">
+						<label for="inputFirstSidec">length of side c: </label><br>
+						<input type="number" id="inputFirstSidec" name="inputFirstSidec" min="1" placeholder="enter length of side c"><br><br>
+						<label for="inputFirstHeight">length of height (h): </label><br>
+						<input type="number" id="inputFirstHeight" name="inputFirstHeight" min="1" placeholder="enter length of height (h)"><br><br>
+						<input type="submit" value="calculate">
+						<input type="reset" value="clear"><br><br><br>
+						<label for="areaResult">the area of the triangle: </label><br>
+						<input type="number" id="areaResult" name="areaResult" min="1" placeholder="triangle area result">
+					</form><br><br>
+				</div>
+			</div>
+			<br><br></div>
+
+		<!-- any class started/contained with 'second' is used to create code for perimeter calculation -->	
+		<div class="secondcontent">
+			<h2><u>perimeter of triangle</u></h2><br>
+				<div class="secondcontainer">
+					<div class="secondleftcontent">
+						<img width="200" src="triangle.png" alt="triangle">
+						<p>the perimeter of triangle formula : <br>a + b + c</p>
+					</div>
+					<div class="secondrightcontent">
+						<h3>calculate the perimeter of triangle</h3>
+						<form onsubmit="calculatePerimeter(); return false;" onreset="resetForm()">
+							<label for="inputSecondSidea">length of side a: </label><br>
+							<input type="number" id="inputSecondSidea" name="inputSecondSidea" min="1" placeholder="enter length of side a"><br><br>
+							<label for="inputSecondSideb">length of side b: </label><br>
+							<input type="number" id="inputSecondSideb" name="inputSecondSideb" min="1" placeholder="enter length of side b"><br><br>
+							<label for="inputSecondSidec">length of side c: </label><br>
+							<input type="number" id="inputSecondSidec" name="inputSecondSidec" min="1" placeholder="enter length of side c"><br><br>
+							<input type="submit" value="calculate">
+							<input type="reset" value="clear"><br><br><br>
+							<label for="perimeterResult">the perimeter of the triangle: </label><br>
+							<input type="number" id="perimeterResult" name="perimeterResult" min="1"  placeholder="triangle perimeter result">
+						</form><br>
+					</div>
+				</div><br>	
+		</div>
+		<footer>
+			<p><em>calculator mini-project by fiona julieta (Dec 2023)</em></p>
+		</footer>
+        <script src="/js/script.js"></script>
+	</body>
+</html>
