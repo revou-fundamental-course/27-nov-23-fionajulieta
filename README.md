@@ -17,3 +17,6 @@ Project requirement:
 7.	Please only put only 1 css for the entirety of the project
 8.	Put javascript files inside the js/ folder
 9.	Please put only 1 javascript file for the entirety of the project
+
+Here is the preview:
+<video src="Preview.mp4" controls title="Title"></video>
