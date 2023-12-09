@@ -19,4 +19,5 @@ Project requirement:
 9.	Please put only 1 javascript file for the entirety of the project
 
 Here is the preview:
-<video src="Preview.mp4" controls title="Title"></video>
+https://github.com/revou-fundamental-course/27-nov-23-fionajulieta/assets/146444371/90143239-f56b-4466-b9b6-e49d6bb83e98
+
